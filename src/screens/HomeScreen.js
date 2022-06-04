@@ -57,12 +57,10 @@ const HomeScreen = () => {
         </div>
         <div className="text-left pt-14 md:pt-32 md:pl-7">
           <p className="text-5xl md:text-6xl text-purple-800 font-bold">
-            Make URLs Tiny
+            URL Shortner
           </p>
           <p className="mt-6 text-xl text-gray-500">
-            <span className="text-purple-800">Makeurlstiny</span> URL shortener
-            which takes some long, unwieldy link and turns it into a shorter,
-            easy-to-share one.
+            <span className="text-purple-800">URL Shortner</span> This takes some long, unwieldy link and turns it into a shorter, easy-to-share one.
           </p>
           <form className="flex flex-col mt-5" onSubmit={submitHandler}>
             <label htmlFor="url" className="text-lg text-purple-700 mb-2">
@@ -70,7 +68,7 @@ const HomeScreen = () => {
             </label>
             <input
               type="url"
-              placeholder="Enter URl..."
+              placeholder="Enter valid URl..."
               id="url"
               required
               className="px-5 py-3 rounded ring-2 ring-gray-200 transition duration-200 focus:outline-none focus:ring-purple-700 text-xl"
@@ -105,7 +103,7 @@ const HomeScreen = () => {
               <p className="text-gray-700 mt-4">Share Now:</p>
               <div className="flex flex-row mt-2 space-x-4">
                 <EmailShareButton
-                  subject="Link Short By MakeURLsTiny"
+                  subject="Link Short By URL Shortner"
                   body={`Tap on link:\n ${shortenLink}`}
                   className="focus:outline-none"
                 >
@@ -114,7 +112,7 @@ const HomeScreen = () => {
 
                 <FacebookShareButton
                   url={`Tap on link:\n ${shortenLink}`}
-                  quote={"Link Short By MakeURLsTiny"}
+                  quote={"Link Short By URL Shortner"}
                   className="focus:outline-none"
                 >
                   <FacebookIcon size={32} round />
@@ -122,7 +120,7 @@ const HomeScreen = () => {
 
                 <TwitterShareButton
                   url={`Tap on link:\n ${shortenLink}`}
-                  title={"Link Short By MakeURLsTiny"}
+                  title={"Link Short By URL Shortner"}
                   className="focus:outline-none"
                 >
                   <TwitterIcon size={32} round />
@@ -130,7 +128,7 @@ const HomeScreen = () => {
 
                 <TelegramShareButton
                   url={`Tap on link:\n ${shortenLink}`}
-                  title={"Link Short By MakeURLsTiny"}
+                  title={"Link Short By URL Shortner"}
                   className="focus:outline-none"
                 >
                   <TelegramIcon size={32} round />
@@ -138,7 +136,7 @@ const HomeScreen = () => {
 
                 <WhatsappShareButton
                   url={`Tap on link:\n ${shortenLink}`}
-                  title={"Link Short By MakeURLsTiny"}
+                  title={"Link Short By URL Shortner"}
                   separator={":\n\n"}
                   className="focus:outline-none"
                 >
