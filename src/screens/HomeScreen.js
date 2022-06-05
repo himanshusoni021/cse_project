@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-// import {
-//   EmailShareButton,
-//   EmailIcon,
-//   FacebookShareButton,
-//   TwitterShareButton,
-//   LinkedinShareButton,
-//   WhatsappShareButton,
-//   TelegramShareButton,
-//   FacebookIcon,
-//   TwitterIcon,
-//   TelegramIcon,
-//   WhatsappIcon,
-//   LinkedinIcon,
-// } from "react-share";
+import {
+  EmailShareButton,
+  EmailIcon,
+  FacebookShareButton,
+  TwitterShareButton,
+  LinkedinShareButton,
+  WhatsappShareButton,
+  TelegramShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  TelegramIcon,
+  WhatsappIcon,
+  LinkedinIcon,
+} from "react-share";
 const BitlyClient = require("bitly").BitlyClient;
 
 const HomeScreen = () => {
@@ -103,8 +103,12 @@ const HomeScreen = () => {
              
 
 
-/*
 
+
+
+
+
+{/* 
               <p className="text-gray-700 mt-4">Share Now:</p>
               <div className="flex flex-row mt-2 space-x-4">
                 <EmailShareButton
@@ -155,9 +159,13 @@ const HomeScreen = () => {
                   <LinkedinIcon size={32} round />
                 </LinkedinShareButton>
               </div>
-              
-              
-      */        
+               */
+}
+  
+
+
+
+
               
             </div>
           )}
