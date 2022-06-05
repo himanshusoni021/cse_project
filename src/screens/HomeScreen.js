@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import {
-  EmailShareButton,
-  EmailIcon,
-  FacebookShareButton,
-  TwitterShareButton,
-  LinkedinShareButton,
-  WhatsappShareButton,
-  TelegramShareButton,
-  FacebookIcon,
-  TwitterIcon,
-  TelegramIcon,
-  WhatsappIcon,
-  LinkedinIcon,
-} from "react-share";
+// // import {
+//   EmailShareButton,
+//   EmailIcon,
+//   FacebookShareButton,
+//   TwitterShareButton,
+//   LinkedinShareButton,
+//   WhatsappShareButton,
+//   TelegramShareButton,
+//   FacebookIcon,
+//   TwitterIcon,
+//   TelegramIcon,
+//   WhatsappIcon,
+//   LinkedinIcon,
+// } from "react-share";
 const BitlyClient = require("bitly").BitlyClient;
 
 const HomeScreen = () => {
