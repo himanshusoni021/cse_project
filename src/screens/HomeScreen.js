@@ -59,7 +59,7 @@ const HomeScreen = () => {
 //         </div>
     
     
-        <div className="text-left pt-14 md:pt-32 md:pl-7">
+       // <div className="text-left pt-14 md:pt-32 md:pl-7">
           <p className="text-5xl md:text-6xl text-purple-800 font-bold">
             URL Shortner
           </p>
@@ -173,7 +173,7 @@ const HomeScreen = () => {
               
             </div>
           )}
-        </div>
+       // </div>
       </div>
       <div className="flex flex-col text-center w-full my-4 md:my-6">
         <a
