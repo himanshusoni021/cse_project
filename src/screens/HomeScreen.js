@@ -1,5 +1,18 @@
 import React, { useState } from "react";
-
+import {
+  EmailShareButton,
+  EmailIcon,
+  FacebookShareButton,
+  TwitterShareButton,
+  LinkedinShareButton,
+  WhatsappShareButton,
+  TelegramShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  TelegramIcon,
+  WhatsappIcon,
+  LinkedinIcon,
+} from "react-share";
 const BitlyClient = require("bitly").BitlyClient;
 
 const HomeScreen = () => {
@@ -34,9 +47,15 @@ const HomeScreen = () => {
 
   return (
     <div className="container mx-auto px-3 md:px-12 pt-7 md:pt-10">
-    
-        <div className="text-center pt-14 md:pt-32 md:pl-7">
-           
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="text-center mt-12 md:mt-0">
+          <img
+            src="makelinktiny_logo.svg"
+            alt="makelinktiny_logo"
+            className="animate-bounce h-64 md:animate-pulse mx-auto md:h-full"
+          />
+        </div>
+        <div className="text-left pt-14 md:pt-32 md:pl-7">
           <p className="text-5xl md:text-6xl text-purple-800 font-bold">
             URL Shortner
           </p>
@@ -45,7 +64,7 @@ const HomeScreen = () => {
           </p>
           <form className="flex flex-col mt-5" onSubmit={submitHandler}>
             <label htmlFor="url" className="text-lg text-purple-700 mb-2">
-              Enter valid URL
+              Enter URL
             </label>
             <input
               type="url"
@@ -80,9 +99,61 @@ const HomeScreen = () => {
                 className="font-semibold text-lg text-purple-800"
               >
                 {shortenLink}
-              </a>               
+              </a>
+
+              <p className="text-gray-700 mt-4">Share Now:</p>
+              <div className="flex flex-row mt-2 space-x-4">
+                <EmailShareButton
+                  subject="Link Short By URL Shortner"
+                  body={`Tap on link:\n ${shortenLink}`}
+                  className="focus:outline-none"
+                >
+                  <EmailIcon size={32} round />
+                </EmailShareButton>
+
+                <FacebookShareButton
+                  url={`Tap on link:\n ${shortenLink}`}
+                  quote={"Link Short By URL Shortner"}
+                  className="focus:outline-none"
+                >
+                  <FacebookIcon size={32} round />
+                </FacebookShareButton>
+
+                <TwitterShareButton
+                  url={`Tap on link:\n ${shortenLink}`}
+                  title={"Link Short By URL Shortner"}
+                  className="focus:outline-none"
+                >
+                  <TwitterIcon size={32} round />
+                </TwitterShareButton>
+
+                <TelegramShareButton
+                  url={`Tap on link:\n ${shortenLink}`}
+                  title={"Link Short By URL Shortner"}
+                  className="focus:outline-none"
+                >
+                  <TelegramIcon size={32} round />
+                </TelegramShareButton>
+
+                <WhatsappShareButton
+                  url={`Tap on link:\n ${shortenLink}`}
+                  title={"Link Short By URL Shortner"}
+                  separator={":\n\n"}
+                  className="focus:outline-none"
+                >
+                  <WhatsappIcon size={32} round />
+                </WhatsappShareButton>
+
+                <LinkedinShareButton
+                  url={`Tap on link:\n ${shortenLink}`}
+                  className="focus:outline-none"
+                >
+                  <LinkedinIcon size={32} round />
+                </LinkedinShareButton>
+              </div>             
             </div>
           )}
+        </div>
       </div>
       <div className="flex flex-col text-center w-full my-4 md:my-6">
         <a
