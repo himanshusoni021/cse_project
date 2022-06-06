@@ -47,15 +47,21 @@ const HomeScreen = () => {
 
   return (
     <div className="container mx-auto px-3 md:px-12 pt-7 md:pt-10">
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="text-center mt-12 md:mt-0">
+
+
+      {/* <div className="grid grid-cols-1 md:grid-cols-2"> */}
+        {/* <div className="text-center mt-12 md:mt-0">
           <img
             src="makelinktiny_logo.svg"
             alt="makelinktiny_logo"
             className="animate-bounce h-64 md:animate-pulse mx-auto md:h-full"
           />
-        </div>
-        <div className="text-left pt-14 md:pt-32 md:pl-7">
+        </div> */}
+
+
+        <div className="text-center pt-14 md:pt-32 md:pl-7">
+
+            
           <p className="text-5xl md:text-6xl text-purple-800 font-bold">
             URL Shortner
           </p>
@@ -162,7 +168,7 @@ const HomeScreen = () => {
               
             </div>
           )}
-        </div>
+        {/* </div> */}
       </div>
       <div className="flex flex-col text-center w-full my-4 md:my-6">
         <a
