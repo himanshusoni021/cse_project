@@ -80,7 +80,7 @@ const HomeScreen = () => {
                 type="submit"
                 className="px-6 py-4 bg-purple-700 text-white text-xl font-semibold transition duration-200 hover:bg-purple-800 focus:outline-none rounded-md mt-5 max-w-max"
               >
-                {"Create Shorten"}
+                {"Generate Short URL"}
               </button>
               {isShorten && (
                 <button
